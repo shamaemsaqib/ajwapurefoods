@@ -1,0 +1,40 @@
+.nav-wrapper {
+  max-width: 100vw;
+  max-height: 15vh;
+  padding: 15px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-wrapper {
+  z-index: 3;
+}
+
+#nav-logo {
+  width: 80px;
+  height: 45px;
+}
+
+.nav-icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 3;
+}
+
+.nav-icon-wrapper:hover {
+  cursor: pointer;
+}
+
+.nav-icon-text {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-icon {
+  width: 25px;
+  height: 40px;
+  color: #fff;
+}
