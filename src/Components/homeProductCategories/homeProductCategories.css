@@ -1,0 +1,42 @@
+.product-categories-section-wrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.product-categories-section-title {
+  margin: 2rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: var(--primaryGreenDark);
+  position: relative;
+}
+
+.product-categories-section-title::before,
+.product-categories-section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5rem;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+}
+
+.product-categories-section-title::before {
+  left: 2.2rem;
+}
+
+.product-categories-section-title::after {
+  right: 2.2rem;
+}
+
+.product-categories-wrapper {
+  max-width: 100%;
+  display: grid;
+  text-align: center;
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
