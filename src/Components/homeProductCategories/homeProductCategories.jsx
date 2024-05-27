@@ -29,7 +29,9 @@ function HomeProductCategories() {
 
   return (
     <div className="product-categories-section-wrapper">
-      <h1 className="product-categories-section-title">our products</h1>
+      <h1 className="product-categories-section-title section-title">
+        our products
+      </h1>
       <div className="product-categories-wrapper">
         {productCategories.map((category) => (
           <HomeSingleProductCategory category={category} />

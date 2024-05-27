@@ -2,6 +2,7 @@
   --primaryGreenDark: #75af5d;
   --primaryGreenLight: #90e46b;
   --secondaryBrown: #a78136;
+  --backgroundDark: #000000ea;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,4 +28,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Global Styles */
+.section-title {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: var(--primaryGreenDark);
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 5rem;
+  background-color: var(--backgroundDark);
+  position: absolute;
+  top: 50%;
+}
+
+.section-title.dark::before,
+.section-title.dark::after {
+  background-color: #fff !important;
+}
+
+.section-title::before {
+  left: 2.2rem;
+}
+
+.section-title::after {
+  right: 2.2rem;
 }

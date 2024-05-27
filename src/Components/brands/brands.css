@@ -1,0 +1,22 @@
+#brands-section-wrapper {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#brands-section-title {
+  margin: 1.5rem 0;
+}
+
+#brands-images-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem 1rem;
+  place-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.brands-single-img {
+  width: 90%;
+}
