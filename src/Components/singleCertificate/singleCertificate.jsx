@@ -17,6 +17,7 @@ function SingleCertificate({ index, certificate, ...otherProps }) {
       <p className="single-certificate-desc">{<em>{certificate.desc}</em>}</p>
       <CustomTransparentButton
         link={certificate.link}
+        text={"full certificate"}
         icon={ArrowUprightIcon}
         newTab
       />

@@ -6,7 +6,10 @@ import RiceImg from "../../assets/misc/Rice-500x500.png";
 import SaltImg from "../../assets/misc/Salt-500x500.png";
 import SpicesImg from "../../assets/misc/Spices-500x500.png";
 
+import ArrowRightIcon from "../../assets/icons/arrow-right-solid.svg";
+
 import HomeSingleProductCategory from "../homeSingleProductCategory/homeSingleProductCategory";
+import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
 
 function HomeProductCategories() {
   const productCategories = [
@@ -28,15 +31,21 @@ function HomeProductCategories() {
   ];
 
   return (
-    <div className="product-categories-section-wrapper">
-      <h1 className="product-categories-section-title section-title">
+    <div id="product-categories-section-wrapper">
+      <h1 className="section-title" id="product-categories-section-title">
         our products
       </h1>
-      <div className="product-categories-wrapper">
+      <div id="product-categories-wrapper">
         {productCategories.map((category) => (
           <HomeSingleProductCategory category={category} />
         ))}
       </div>
+      <CustomTransparentButton
+        light
+        link={"/products"}
+        text={"browse all products"}
+        icon={ArrowRightIcon}
+      />
     </div>
   );
 }

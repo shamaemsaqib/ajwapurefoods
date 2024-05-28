@@ -1,13 +1,17 @@
-.product-categories-section-wrapper {
+#product-categories-section-wrapper {
   width: 100%;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
 
-.product-categories-section-title {
-  margin: 2rem 0;
+#product-categories-section-title {
+  margin-top: 2rem;
 }
 
-.product-categories-wrapper {
+#product-categories-wrapper {
   max-width: 100%;
   display: grid;
   text-align: center;

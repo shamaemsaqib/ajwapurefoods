@@ -12,6 +12,11 @@
   transition: all 0.4s ease-in-out;
 }
 
+.transparent-btn.light {
+  color: #000;
+  font-weight: bold;
+}
+
 .transparent-btn:hover {
   cursor: pointer;
   background-color: var(--primaryGreenDark);
@@ -20,4 +25,9 @@
 .transparent-btn-icon {
   width: 16px;
   height: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.transparent-btn:hover .transparent-btn-icon {
+  transform: translateX(5px);
 }

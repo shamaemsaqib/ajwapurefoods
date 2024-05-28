@@ -3,18 +3,21 @@ import React from "react";
 import "./header.css";
 
 import Navbar from "../navbar/navbar";
+import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
+
+import ArrowRightIconLight from "../../assets/icons/arrow-right-solid-light.svg";
 
 function Header() {
   return (
-    <div className="header-wrapper">
-      <div className="header">
+    <div id="header-wrapper">
+      <div id="header">
         <Navbar />
-        <div className="banner-wrapper">
-          <h2 className="banner-title">
+        <div id="banner-wrapper">
+          <h2 id="banner-title">
             Welcome to <br />{" "}
             <span id="banner-title-name">Ajwa Pure Foods</span>
           </h2>
-          <h4 className="banner-text">
+          <h4 id="banner-text">
             <span id="banner-text-name">Ajwa Pure Foods</span> Industries
             serving the world since 1989. Winning the faith of our valued
             customers is the main aim of this company. Providing clients with
@@ -22,6 +25,18 @@ function Header() {
             aromatic Rice, finest quality natural Himalayan Pink Salt & 100%
             pure & natural spices.
           </h4>
+          <div id="banner-btn-grp">
+            <CustomTransparentButton
+              link={"/about-us"}
+              text={"about us"}
+              icon={ArrowRightIconLight}
+            />
+            <CustomTransparentButton
+              link={"/contact"}
+              text={"contact us"}
+              icon={ArrowRightIconLight}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -2,16 +2,22 @@ import React from "react";
 
 import "./customTransparentButton.css";
 
-function CustomTransparentButton({ link, icon, newTab = false }) {
+function CustomTransparentButton({
+  link,
+  newTab = false,
+  light = false,
+  text,
+  icon,
+}) {
   return (
     <a
       href={link}
       target={newTab ? "_blank" : ""}
       rel={newTab ? "noreferrer" : ""}
-      className="transparent-btn"
+      className={`transparent-btn${light ? ` light` : ``}`}
     >
-      full certificate
-      <img src={icon} alt="" className="transparent-btn-icon" />
+      {text}
+      {icon ? <img src={icon} alt="" className="transparent-btn-icon" /> : null}
     </a>
   );
 }

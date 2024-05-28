@@ -9,34 +9,17 @@ function Footer() {
     <div id="footer-section-wrapper">
       <div id="footer-section">
         <div id="footer-links-section">
-          <div
-            id="footer-links-address-wrapper"
-            className="footer-links-subsection-wrapper"
-          >
-            <p
-              id="footer-address-heading"
-              className="footer-links-subsection-heading"
-            >
-              where to find us
-            </p>
-            <p id="footer-address" className="footer-links-subsection-link">
+          <div className="footer-links-subsection-wrapper">
+            <p className="footer-links-subsection-heading">where to find us</p>
+            <p className="footer-links-subsection-link">
               5-Km Main G.T. Road <br /> Muridke, Punjab <br /> Pakistan
             </p>
           </div>
-          <div
-            id="footer-links-contacts-wrapper"
-            className="footer-links-subsection-wrapper"
-          >
-            <p
-              id="footer-contacts-heading"
-              className="footer-links-subsection-heading"
-            >
+          <div className="footer-links-subsection-wrapper">
+            <p className="footer-links-subsection-heading">
               get in touch with us
             </p>
-            <ul
-              id="footer-links-contacts"
-              className="footer-links-subsection-list"
-            >
+            <ul className="footer-links-subsection-list">
               <li className="footer-links-subsection-link">
                 <a href="mailto:info@royalsalvafoods.com">
                   info@royalsalvafoods.com
@@ -50,20 +33,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div
-            id="footer-links-social-wrapper"
-            className="footer-links-subsection-wrapper"
-          >
-            <p
-              id="footer-social-heading"
-              className="footer-links-subsection-heading"
-            >
-              follow us
-            </p>
-            <ul
-              id="footer-links-social"
-              className="footer-links-subsection-list"
-            >
+          <div className="footer-links-subsection-wrapper">
+            <p className="footer-links-subsection-heading">follow us</p>
+            <ul className="footer-links-subsection-list">
               <li className="footer-links-subsection-link">Facebook</li>
               <li className="footer-links-subsection-link">Instagram</li>
               <li className="footer-links-subsection-link">LinkedIn</li>
