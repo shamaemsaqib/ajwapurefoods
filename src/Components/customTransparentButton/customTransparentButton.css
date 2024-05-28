@@ -1,0 +1,23 @@
+.transparent-btn {
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 15px 35px;
+  border: 2px solid var(--primaryGreenDark);
+  transition: all 0.4s ease-in-out;
+}
+
+.transparent-btn:hover {
+  cursor: pointer;
+  background-color: var(--primaryGreenDark);
+}
+
+.transparent-btn-icon {
+  width: 16px;
+  height: 16px;
+}
