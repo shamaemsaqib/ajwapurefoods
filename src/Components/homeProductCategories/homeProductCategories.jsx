@@ -14,16 +14,19 @@ import CustomTransparentButton from "../customTransparentButton/customTransparen
 function HomeProductCategories() {
   const productCategories = [
     {
+      key: 1,
       name: "rice",
       img: RiceImg,
       desc: "Royal Salva Foods, pure Basmati Rice Brands like Ajwa, Royal Salva are synonyms with quality and real taste. when one thinks of Royal Salva Foods the first thing that comes to mind is extreme quality, rich taste, pure and guaranteed aromatic Basmati Rice Products since 1989.",
     },
     {
+      key: 2,
       name: "himalyan pink salt",
       img: SaltImg,
       desc: "Royal Salva Foods is one of the largest Pure Himalayan Pink Salt supplier, manufacturer and exporter of Pakistan.We are Manufacturing & Worldwide Exporting of pure Himalayan edible Pink Salt & pink salt crafts which brings the world’s best real Himalayan Crystal Rock Salt Lamps, Cooking Slabs, Soaps, inhaler etc.",
     },
     {
+      key: 3,
       name: "spices",
       img: SpicesImg,
       desc: "Royal Salva Foods have been an integral part of every cuisine(food) since ancient times, adding flavor and fragrance to it therefore we offer 100% pure and natural spices that are hygienically packed, and well-known for quality, purity and value.",
@@ -37,7 +40,7 @@ function HomeProductCategories() {
       </h1>
       <div id="product-categories-wrapper">
         {productCategories.map((category) => (
-          <HomeSingleProductCategory category={category} />
+          <HomeSingleProductCategory key={category.key} category={category} />
         ))}
       </div>
       <CustomTransparentButton

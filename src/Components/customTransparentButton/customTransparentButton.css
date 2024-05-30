@@ -1,13 +1,14 @@
 .transparent-btn {
   letter-spacing: 2px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   background-color: transparent;
   color: #fff;
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 15px 35px;
+  justify-content: center;
+  padding: 10px 25px;
   border: 2px solid var(--primaryGreenDark);
   transition: all 0.4s ease-in-out;
 }
@@ -30,4 +31,42 @@
 
 .transparent-btn:hover .transparent-btn-icon {
   transform: translateX(5px);
+}
+
+@media only screen and (min-width: 321px) {
+  .transparent-btn {
+    padding: 12px 25px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .transparent-btn {
+    font-size: 0.75rem;
+    padding: 15px 30px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .transparent-btn {
+    font-size: 0.8rem;
+    padding: 15px 38px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .transparent-btn {
+    font-size: 0.85rem;
+    padding: 18px 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .transparent-btn {
+    font-size: 0.9rem;
+    padding: 20px 42px;
+  }
 }

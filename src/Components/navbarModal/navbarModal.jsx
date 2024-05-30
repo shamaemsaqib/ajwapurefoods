@@ -9,14 +9,21 @@ function NavbarModal({ displayed }) {
     >
       <div className="nav-modal">
         <ul className="nav-modal-list">
-          <li className="nav-modal-link">home</li>
-          <li className="nav-modal-link">our products</li>
-          <li className="nav-modal-link">brands</li>
-          <li className="nav-modal-link">national</li>
-          <li className="nav-modal-link">international</li>
-          <li className="nav-modal-link">technology</li>
-          <li className="nav-modal-link">about us</li>
-          <li className="nav-modal-link">contact</li>
+          <li className="nav-modal-link">
+            <a href="/">home</a>
+          </li>
+          <li className="nav-modal-link">
+            <a href="/products">products</a>
+          </li>
+          <li className="nav-modal-link">
+            <a href="/gallery">gallery</a>
+          </li>
+          <li className="nav-modal-link">
+            <a href="/about-us">about us</a>
+          </li>
+          <li className="nav-modal-link">
+            <a href="contact">contact</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -15,31 +15,31 @@ import SingleCertificate from "../singleCertificate/singleCertificate";
 
 const certifications = [
   {
-    id: 1,
+    key: 1,
     desc: "Halal",
     img: HalalCert,
     link: "https://drive.google.com/file/d/1wYrLMCZ7swoiFijckGrPg9MVJiQ8rLU3/view?usp=drive_link",
   },
   {
-    id: 2,
+    key: 2,
     desc: "Kosher",
     img: KosherCert,
     link: "https://drive.google.com/file/d/1VEK1-kLsI6L_x63rPSwhkpx9H0tK-188/view?usp=drive_link",
   },
   {
-    id: 3,
+    key: 3,
     desc: "HACP",
     img: HACPCert,
     link: "https://drive.google.com/file/d/1Om4BmCrNBO73X8brGwH8J1y-7i0gRx8A/view?usp=drive_link",
   },
   {
-    id: 4,
+    key: 4,
     desc: "ISO 22000",
     img: ISO22000Cert,
     link: "https://drive.google.com/file/d/1MoHiYgaxpW3RaBzGDv8bChA5HIiz0L_r/view?usp=drive_link",
   },
   {
-    id: 5,
+    key: 5,
     desc: "ISO 9001",
     img: ISO9001Cert,
     link: "https://drive.google.com/file/d/1sPp9kAN-SKB-IzkHUqw9Fd7E_b108JCF/view?usp=drive_link",
@@ -118,7 +118,8 @@ function Certifications() {
         <Slider {...settings}>
           {certifications.map((certificate) => (
             <SingleCertificate
-              index={certificate.id}
+              key={certificate.key}
+              index={certificate.key}
               certificate={certificate}
             />
           ))}
