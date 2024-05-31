@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./singleCertificate.jsx";
+import "./singleCertificate.css";
 
 import CustomTransparentButton from "../customTransparentButton/customTransparentButton.jsx";
 

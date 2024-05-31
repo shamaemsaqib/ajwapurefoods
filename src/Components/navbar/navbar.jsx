@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 
 import Logo from "../../assets/logos/Logo 1024x822 removebg.png";
+
 import { ReactComponent as NavBarsIcon } from "../../assets/icons/bars-solid.svg";
 import { ReactComponent as NavXMarkIcon } from "../../assets/icons/xmark-solid.svg";
 
@@ -25,7 +26,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div id="nav-wrapper" className={`${scrolled ? ` scrolled` : ``}`}>
+    <div id="nav-wrapper" className={`${scrolled ? `scrolled` : ``}`}>
       <div className="nav-logo-wrapper">
         <img src={Logo} alt="" id="nav-logo" />
       </div>

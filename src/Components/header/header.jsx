@@ -2,9 +2,9 @@ import React from "react";
 
 import "./header.css";
 
-import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
-
 import ArrowRightIconLight from "../../assets/icons/arrow-right-solid-light.svg";
+
+import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
 
 function Header() {
   return (

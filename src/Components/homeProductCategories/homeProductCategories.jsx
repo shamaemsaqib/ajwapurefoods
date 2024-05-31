@@ -8,6 +8,7 @@ import SpicesImg from "../../assets/misc/Spices-500x500.png";
 
 import ArrowRightIcon from "../../assets/icons/arrow-right-solid.svg";
 
+import SectionTitle from "../sectionTitle/sectionTitle";
 import HomeSingleProductCategory from "../homeSingleProductCategory/homeSingleProductCategory";
 import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
 
@@ -35,9 +36,10 @@ function HomeProductCategories() {
 
   return (
     <div id="product-categories-section-wrapper">
-      <h1 className="section-title" id="product-categories-section-title">
-        our products
-      </h1>
+      <SectionTitle
+        text={"our products"}
+        idName="product-categories-section-title"
+      />
       <div id="product-categories-wrapper">
         {productCategories.map((category) => (
           <HomeSingleProductCategory key={category.key} category={category} />
