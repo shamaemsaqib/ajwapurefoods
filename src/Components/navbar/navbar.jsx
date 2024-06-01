@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./navbar.css";
 
@@ -16,6 +17,10 @@ function Navbar() {
 
   const navToggleHandler = () => {
     setDisplayed(!displayed);
+  };
+
+  const navModalLinkHandler = (setDisplayed) => {
+    setDisplayed(false);
   };
 
   useEffect(() => {
@@ -40,22 +45,25 @@ function Navbar() {
       </div>
       <ul id="nav-links-wrapper">
         <li className="nav-single-link">
-          <a href="/">home</a>
+          <Link to="/">home</Link>
         </li>
         <li className="nav-single-link">
-          <a href="/products">products</a>
+          <Link to="/products">products</Link>
         </li>
         <li className="nav-single-link">
-          <a href="/gallery">gallery</a>
+          <Link to="/gallery">gallery</Link>
         </li>
         <li className="nav-single-link">
-          <a href="/about-us">about us</a>
+          <Link to="/about-us">about us</Link>
         </li>
         <li className="nav-single-link">
-          <a href="/contact">contact</a>
+          <Link to="/contact">contact</Link>
         </li>
       </ul>
-      <NavbarModal displayed={displayed} />
+      <NavbarModal
+        displayed={displayed}
+        handler={() => navModalLinkHandler(setDisplayed)}
+      />
     </div>
   );
 }
