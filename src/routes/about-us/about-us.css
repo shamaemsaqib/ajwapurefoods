@@ -1,0 +1,83 @@
+.about-section-title {
+  font-weight: 200;
+  font-family: "Source Sans 3", sans-serif;
+  text-transform: uppercase;
+  color: var(--primaryGreenDark);
+  font-size: 2.6rem;
+}
+
+.about-section-title .bold {
+  font-weight: 800;
+}
+
+#about-section-wrapper {
+  margin-top: 12vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#about-story-subsection {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+#about-story-subsection-text {
+  width: 70%;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#about-story-subsection-text .bold {
+  font-weight: bold;
+  color: var(--secondaryBrown);
+}
+
+#about-values-subsection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-values-subsection-title {
+  margin-bottom: 1.5rem;
+}
+
+#about-values-subsection-cards-wrapper {
+  display: flex;
+  max-width: 60%;
+  gap: 2rem;
+}
+
+.about-values-subsection-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid var(--tertiaryGrey);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.about-values-subsection-card-img-wrapper {
+  width: 100%;
+}
+
+.about-values-subsection-card-img {
+  max-width: 30%;
+  height: auto;
+}
+
+.about-values-subsection-card-title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 750;
+  margin-bottom: 0.3rem;
+}
+
+.about-values-subsection-card-text {
+  color: #000000a4;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,10 @@
+#contact-section-wrapper {
+  margin-top: 12vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#contact-section {
+  width: 70%;
+}

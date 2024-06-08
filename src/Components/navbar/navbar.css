@@ -147,9 +147,13 @@
     transition: color 0.3s ease-in-out;
   }
 
+  .nav-single-link > .active {
+    color: #fff;
+  }
+
   .nav-single-link:hover {
     cursor: pointer;
-    color: #fff;
+    color: var(--primaryGreenDark);
   }
 
   .nav-icon-wrapper {

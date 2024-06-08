@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import "./navbar.css";
 
@@ -14,6 +14,8 @@ function Navbar() {
   let [displayed, setDisplayed] = useState(false);
 
   let [scrolled, setScrolled] = useState(false);
+
+  const isHome = useLocation().pathname === "/" ? true : false;
 
   const navToggleHandler = () => {
     setDisplayed(!displayed);
@@ -31,7 +33,10 @@ function Navbar() {
   }, []);
 
   return (
-    <div id="nav-wrapper" className={`${scrolled ? `scrolled` : ``}`}>
+    <div
+      id="nav-wrapper"
+      className={`${scrolled || !isHome ? `scrolled` : ``}`}
+    >
       <div className="nav-logo-wrapper">
         <img src={Logo} alt="" id="nav-logo" />
       </div>
@@ -45,19 +50,44 @@ function Navbar() {
       </div>
       <ul id="nav-links-wrapper">
         <li className="nav-single-link">
-          <Link to="/">home</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            home
+          </NavLink>
         </li>
         <li className="nav-single-link">
-          <Link to="/products">products</Link>
+          <NavLink
+            to="/products"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            products
+          </NavLink>
         </li>
         <li className="nav-single-link">
-          <Link to="/gallery">gallery</Link>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            gallery
+          </NavLink>
         </li>
         <li className="nav-single-link">
-          <Link to="/about-us">about us</Link>
+          <NavLink
+            to="/about-us"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            about us
+          </NavLink>
         </li>
         <li className="nav-single-link">
-          <Link to="/contact">contact</Link>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            contact
+          </NavLink>
         </li>
       </ul>
       <NavbarModal

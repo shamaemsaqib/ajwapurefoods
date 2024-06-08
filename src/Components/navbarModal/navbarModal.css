@@ -41,6 +41,10 @@
   transition: color 0.3s ease-in-out;
 }
 
+.nav-modal-link > .active {
+  color: #fff;
+}
+
 .nav-modal-link:first-child {
   padding-top: 10px;
   border-top: #ffffff1f solid 1px;
@@ -48,7 +52,7 @@
 
 .nav-modal-link:hover {
   cursor: pointer;
-  color: #fff;
+  color: var(--primaryGreenDark);
 }
 
 @media only screen and (min-width: 480px) {

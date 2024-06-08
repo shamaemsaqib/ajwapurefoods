@@ -1,0 +1,82 @@
+#about-founders-subsection {
+  display: grid;
+  place-items: center;
+  margin-bottom: 2rem;
+}
+
+#founders-subsection-title {
+  margin: 2rem 0 1rem 0;
+}
+
+#founders-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.single-founder-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: stretch;
+  padding: 0.5rem;
+}
+
+.single-founder-wrapper.right {
+  flex-direction: row-reverse;
+}
+
+.single-founder-img-wrapper {
+  width: 30%;
+  display: grid;
+  place-items: center;
+}
+
+.single-founder-img {
+  width: 85%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.single-founder-info {
+  padding: 0.8rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.right .single-founder-info {
+  text-align: right;
+}
+
+.single-founder-msg {
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.single-founder-info-name {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  color: var(--primaryGreenDark);
+  letter-spacing: 2px;
+}
+
+#single-founder-info-name-late {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+
+.single-founder-info-role {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 2px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./navbarModal.css";
 
@@ -11,19 +11,44 @@ function NavbarModal({ displayed, handler }) {
       <div className="nav-modal">
         <ul className="nav-modal-list">
           <li className="nav-modal-link" onClick={handler}>
-            <Link to="/">home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              home
+            </NavLink>
           </li>
           <li className="nav-modal-link" onClick={handler}>
-            <Link to="/products">products</Link>
+            <NavLink
+              to="/products"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              products
+            </NavLink>
           </li>
           <li className="nav-modal-link" onClick={handler}>
-            <Link to="/gallery">gallery</Link>
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              gallery
+            </NavLink>
           </li>
           <li className="nav-modal-link" onClick={handler}>
-            <Link to="/about-us">about us</Link>
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              about us
+            </NavLink>
           </li>
           <li className="nav-modal-link" onClick={handler}>
-            <Link to="contact">contact</Link>
+            <NavLink
+              to="contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              contact
+            </NavLink>
           </li>
         </ul>
       </div>
