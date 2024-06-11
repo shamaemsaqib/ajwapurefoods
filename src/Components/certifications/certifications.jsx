@@ -11,7 +11,7 @@ import HACPCert from "../../assets/certificates/Ajwa Pure Foods (HACCP)-PS.png";
 import HalalCert from "../../assets/certificates/Ajwa Pure Foods (Halal)_page-0001.jpg";
 import KosherCert from "../../assets/certificates/Ajwa Pure Foods (Kosher)_page-0001.jpg";
 
-import SectionTitle from "../sectionTitle/sectionTitle";
+import LineOnSidesTitle from "../lineOnSidesTitle/lineOnSidesTitle";
 import SingleCertificate from "../singleCertificate/singleCertificate";
 
 const certifications = [
@@ -113,7 +113,7 @@ function Certifications() {
   return (
     <div id="certifications-section-wrapper">
       <div id="certifications-section-title-wrapper">
-        <SectionTitle
+        <LineOnSidesTitle
           text={"certifications"}
           idName="certifications-section-title"
         />

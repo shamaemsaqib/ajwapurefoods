@@ -3,7 +3,7 @@ import React from "react";
 import "./gallery.css";
 
 function Gallery() {
-  return <div>Gallery</div>;
+  return <section id="gallery-section-wrapper">Gallery</section>;
 }
 
 export default Gallery;

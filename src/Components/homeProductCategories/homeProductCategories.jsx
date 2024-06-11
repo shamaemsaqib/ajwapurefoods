@@ -8,7 +8,7 @@ import SpicesImg from "../../assets/misc/Spices-500x500.png";
 
 import ArrowRightIcon from "../../assets/icons/arrow-right-solid.svg";
 
-import SectionTitle from "../sectionTitle/sectionTitle";
+import LineOnSidesTitle from "../lineOnSidesTitle/lineOnSidesTitle";
 import HomeSingleProductCategory from "../homeSingleProductCategory/homeSingleProductCategory";
 import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
 
@@ -36,7 +36,7 @@ function HomeProductCategories() {
 
   return (
     <div id="product-categories-section-wrapper">
-      <SectionTitle
+      <LineOnSidesTitle
         text={"our products"}
         idName="product-categories-section-title"
       />

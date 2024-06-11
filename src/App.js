@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import "./App.css";
 
@@ -14,6 +15,12 @@ import AboutUs from "./routes/about-us/about-us.jsx";
 import Contact from "./routes/contact/contact.jsx";
 
 function App() {
+  const currPath = useLocation().pathname;
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currPath]);
+
   return (
     <div className="App">
       <Navbar />

@@ -7,7 +7,7 @@ import PhotoPlaceHolder from "../../assets/misc/Photo Place Holder.jpg";
 function AboutFounders() {
   return (
     <div id="about-founders-subsection">
-      <h2 className="about-section-title" id="founders-subsection-title">
+      <h2 className="section-title" id="founders-subsection-title">
         meet our <strong className="bold">founders</strong>
       </h2>
       <div id="founders-wrapper">

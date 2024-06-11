@@ -11,7 +11,7 @@ function AboutUs() {
   return (
     <section id="about-section-wrapper">
       <div id="about-story-subsection">
-        <h2 className="about-section-title">
+        <h2 className="section-title">
           our <strong className="bold">story</strong>
         </h2>
         <p id="about-story-subsection-text">
@@ -35,7 +35,7 @@ function AboutUs() {
       </div>
       <AboutFounders />
       <div id="about-values-subsection">
-        <h2 className="about-section-title" id="about-values-subsection-title">
+        <h2 className="section-title" id="about-values-subsection-title">
           our <strong className="bold">core values</strong>
         </h2>
         <div id="about-values-subsection-cards-wrapper">
