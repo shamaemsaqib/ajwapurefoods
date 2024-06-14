@@ -12,6 +12,7 @@ import HalalCert from "../../assets/certificates/Ajwa Pure Foods (Halal)_page-00
 import KosherCert from "../../assets/certificates/Ajwa Pure Foods (Kosher)_page-0001.jpg";
 
 import LineOnSidesTitle from "../lineOnSidesTitle/lineOnSidesTitle";
+import CustomArrow from "../customArrow/customArrow";
 import SingleCertificate from "../singleCertificate/singleCertificate";
 
 const certifications = [
@@ -47,33 +48,6 @@ const certifications = [
   },
 ];
 
-function CustomNextArrow({ className, style, onClick }) {
-  return (
-    <button
-      id="nextIcon"
-      className={className}
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      &#10095;
-    </button>
-  );
-}
-
-function CustomPrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <button
-      className={className}
-      id="prevIcon"
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      &#10094;
-    </button>
-  );
-}
-
 function Certifications() {
   const settings = {
     dots: false,
@@ -82,8 +56,8 @@ function Certifications() {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomArrow next />,
+    prevArrow: <CustomArrow />,
     responsive: [
       {
         breakpoint: 1024,

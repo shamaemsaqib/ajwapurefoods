@@ -45,14 +45,12 @@ a {
   color: currentColor;
 }
 
-.section-title {
-  font-weight: 200;
-  font-family: "Source Sans 3", sans-serif;
-  text-transform: uppercase;
-  color: var(--primaryGreenDark);
-  font-size: 2.6rem;
+/* Global Styles for react-slick slider */
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
 }
 
-.section-title .bold {
-  font-weight: 800;
+.slick-disabled {
+  display: none !important;
 }

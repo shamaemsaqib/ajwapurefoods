@@ -4,12 +4,17 @@ import "./aboutFounders.css";
 
 import PhotoPlaceHolder from "../../assets/misc/Photo Place Holder.jpg";
 
+import BoldLightTitle from "../boldLightTitle/boldLightTitle";
+
 function AboutFounders() {
   return (
     <div id="about-founders-subsection">
-      <h2 className="section-title" id="founders-subsection-title">
-        meet our <strong className="bold">founders</strong>
-      </h2>
+      <BoldLightTitle
+        idName={"founders-subsection-title"}
+        first={"meet our"}
+        middle={"founders"}
+        bold={2}
+      />
       <div id="founders-wrapper">
         <article className="single-founder-wrapper">
           <div className="single-founder-img-wrapper">

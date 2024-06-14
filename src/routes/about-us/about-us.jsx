@@ -5,15 +5,14 @@ import "./about-us.css";
 import MissionImg from "../../assets/misc/mission.png";
 import VisionImg from "../../assets/misc/vision.png";
 
+import BoldLightTitle from "../../Components/boldLightTitle/boldLightTitle";
 import AboutFounders from "../../Components/aboutFounders/aboutFounders";
 
 function AboutUs() {
   return (
     <section id="about-section-wrapper">
       <div id="about-story-subsection">
-        <h2 className="section-title">
-          our <strong className="bold">story</strong>
-        </h2>
+        <BoldLightTitle first={"our"} middle={"story"} bold={2} />
         <p id="about-story-subsection-text">
           The management of <span className="bold">Ajwa Foods Industries</span>{" "}
           entered in rice business in 1989 as rice traders under the name of{" "}
@@ -35,9 +34,12 @@ function AboutUs() {
       </div>
       <AboutFounders />
       <div id="about-values-subsection">
-        <h2 className="section-title" id="about-values-subsection-title">
-          our <strong className="bold">core values</strong>
-        </h2>
+        <BoldLightTitle
+          idName={"about-values-subsection-title"}
+          first={"our"}
+          middle={"core values"}
+          bold={2}
+        />
         <div id="about-values-subsection-cards-wrapper">
           <div className="about-values-subsection-card">
             <div className="about-values-subsection-card-img-wrapper">

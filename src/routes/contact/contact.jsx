@@ -2,14 +2,14 @@ import React from "react";
 
 import "./contact.css";
 
+import BoldLightTitle from "../../Components/boldLightTitle/boldLightTitle";
+
 function Contact() {
   return (
     <section id="contact-section-wrapper">
       <div id="contact-section">
         <div id="contact-links-subsection-wrapper">
-          <h2 className="section-title contact-subsection-title">
-            <span className="bold">connect</span> with us
-          </h2>
+          <BoldLightTitle first={"connect"} middle={"with us"} bold={1} />
           <div id="contact-links-wrapper">
             <div className="contact-links-subsection-wrapper">
               <p className="contact-links-subsection-heading">say hi!</p>
@@ -44,9 +44,7 @@ function Contact() {
           </div>
         </div>
         <div id="contact-address-subsection-wrapper">
-          <h2 className="section-title contact-subsection-title">
-            <strong className="bold">meet</strong> with us
-          </h2>
+          <BoldLightTitle first={"meet"} middle={" us"} bold={1} />
           <p id="contact-address">
             5-Km Main G.T. Road <br /> Muridke, Punjab <br /> Pakistan
           </p>

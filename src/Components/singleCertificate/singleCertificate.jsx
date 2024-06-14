@@ -2,9 +2,9 @@ import React from "react";
 
 import "./singleCertificate.css";
 
-import CustomTransparentButton from "../customTransparentButton/customTransparentButton.jsx";
-
 import ArrowUprightIcon from "../../assets/icons/arrow-up-right-from-square-solid.svg";
+
+import CustomTransparentButton from "../customTransparentButton/customTransparentButton.jsx";
 
 function SingleCertificate({ index, certificate, ...otherProps }) {
   return (

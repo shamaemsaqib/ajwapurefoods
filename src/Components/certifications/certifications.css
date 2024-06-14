@@ -19,29 +19,3 @@
 #slider-wrapper {
   padding: 0 40px;
 }
-
-#prevIcon,
-#nextIcon {
-  color: #fff !important;
-  font-size: 2rem;
-  background-color: transparent;
-  width: 25px;
-  height: 35px;
-  transition: all 0.4s ease-in-out;
-}
-
-#prevIcon:hover,
-#nextIcon:hover {
-  cursor: pointer;
-  background-color: var(--primaryGreenDark);
-  color: #000;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  content: "" !important;
-}
-
-.slick-disabled {
-  display: none !important;
-}

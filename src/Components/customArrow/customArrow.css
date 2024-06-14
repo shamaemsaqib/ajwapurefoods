@@ -1,0 +1,21 @@
+.arrowIcon {
+  color: #fff !important;
+  font-size: 2rem;
+  background-color: transparent;
+  width: 25px;
+  height: 35px;
+  transition: all 0.4s ease-in-out;
+}
+
+.arrowIcon.dark {
+  color: #000 !important;
+}
+
+.arrowIcon:hover {
+  cursor: pointer;
+  background-color: var(--primaryGreenDark);
+}
+
+.arrowIcon.dark:hover {
+  color: #fff !important;
+}
