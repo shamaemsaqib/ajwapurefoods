@@ -21,7 +21,7 @@
   align-items: stretch;
   grid-auto-flow: dense;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .gallery-technology-img {
@@ -43,7 +43,8 @@
 }
 
 .gallery-technology-img.medium {
-  grid-column: 3;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 #gallery-international-subsection {

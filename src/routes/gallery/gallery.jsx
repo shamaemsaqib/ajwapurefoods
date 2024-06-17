@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Big1Img from "../../assets/tech/big 1.jpg";
 import Big2Img from "../../assets/tech/big 2.jpg";
+import Big3Img from "../../assets/tech/big 3.jpg";
 import Small1Img from "../../assets/tech/small 1.jpg";
 import Small2Img from "../../assets/tech/small 2.jpg";
 import Small3Img from "../../assets/tech/small 3.jpg";
 import Small4Img from "../../assets/tech/small 4.jpg";
-import MediumImg from "../../assets/tech/medium.jpg";
-import Photo1 from "../../assets/international/1.jpg";
+import MediumImg from "../../assets/tech/medium.png";
 import ReceivingAwardImg from "../../assets/achievement/receiving.jpg";
 import AwardImg from "../../assets/achievement/award.png";
 
@@ -54,6 +54,10 @@ function Gallery() {
       },
     ],
   };
+  let i = 1;
+
+  const buffer = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+
   return (
     <section id="gallery-section">
       <div id="gallery-technology-subsection">
@@ -61,6 +65,7 @@ function Gallery() {
         <div id="gallery-technology-images-wrapper">
           <img src={Big1Img} alt="" className="gallery-technology-img big" />
           <img src={Big2Img} alt="" className="gallery-technology-img big" />
+          <img src={Big3Img} alt="" className="gallery-technology-img big" />
           <img
             src={Small1Img}
             alt=""
@@ -96,16 +101,14 @@ function Gallery() {
         />
         <div id="gallery-international-slider-wrapper">
           <Slider {...settings}>
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
-            <img src={Photo1} alt="" />
+            {buffer.map(() => {
+              return (
+                <img
+                  src={require(`../../assets/international/${i++}.jpg`)}
+                  alt=""
+                />
+              );
+            })}
           </Slider>
         </div>
       </div>
