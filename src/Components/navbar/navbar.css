@@ -26,8 +26,8 @@
 }
 
 #nav-logo {
-  width: 60px;
-  height: 35px;
+  width: 75px;
+  height: 45px;
 }
 
 #nav-links-wrapper {
@@ -63,11 +63,6 @@
     padding: 18px 40px;
   }
 
-  #nav-logo {
-    width: 65px;
-    height: 40px;
-  }
-
   .nav-icon-text {
     letter-spacing: 2px;
   }
@@ -85,8 +80,8 @@
   }
 
   #nav-logo {
-    width: 70px;
-    height: 45px;
+    width: 80px;
+    height: 48px;
   }
 
   .nav-icon-text {
@@ -107,8 +102,13 @@
   }
 
   #nav-logo {
-    width: 78px;
-    height: 50px;
+    width: 85px;
+    height: 52px;
+  }
+
+  .scrolled #nav-logo {
+    width: 82px;
+    height: 48px;
   }
 
   .nav-icon-wrapper {
@@ -129,7 +129,7 @@
 
   #nav-logo {
     width: 90px;
-    height: 48px;
+    height: 52px;
   }
 
   #nav-links-wrapper {
@@ -181,7 +181,7 @@
   }
 
   #nav-logo {
-    width: 100px;
+    width: 95px;
     height: 55px;
   }
 
@@ -194,11 +194,20 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #nav-wrapper {
-    padding: 35px 100px;
+    padding: 25px 100px;
     gap: 4rem;
   }
 
+  #nav-wrapper.scrolled {
+    padding: 35px 100px;
+  }
+
   #nav-logo {
+    width: 120px;
+    height: 65px;
+  }
+
+  .scrolled #nav-logo {
     width: 110px;
     height: 55px;
   }

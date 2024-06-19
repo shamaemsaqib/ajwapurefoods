@@ -2,7 +2,7 @@ import React from "react";
 
 import "./aboutFounders.css";
 
-import PhotoPlaceHolder from "../../assets/misc/Photo Place Holder.jpg";
+import ChairmanImg from "../../assets/misc/chairman.jpeg";
 
 import BoldLightTitle from "../boldLightTitle/boldLightTitle";
 
@@ -18,7 +18,7 @@ function AboutFounders() {
       <div id="founders-wrapper">
         <article className="single-founder-wrapper">
           <div className="single-founder-img-wrapper">
-            <img src={PhotoPlaceHolder} alt="" className="single-founder-img" />
+            <img src={ChairmanImg} alt="" className="single-founder-img" />
           </div>
           <div className="single-founder-info">
             <p className="single-founder-msg">
@@ -42,7 +42,7 @@ function AboutFounders() {
         </article>
         <article className="single-founder-wrapper right">
           <div className="single-founder-img-wrapper">
-            <img src={PhotoPlaceHolder} alt="" className="single-founder-img" />
+            <img src={ChairmanImg} alt="" className="single-founder-img" />
           </div>
           <div className="single-founder-info">
             <p className="single-founder-msg">

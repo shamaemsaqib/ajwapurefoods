@@ -8,7 +8,7 @@ import SpicesImg from "../../assets/misc/Spices-500x500.png";
 
 import ArrowRightIcon from "../../assets/icons/arrow-right-solid.svg";
 
-import LineOnSidesTitle from "../lineOnSidesTitle/lineOnSidesTitle";
+import BoldLightTitle from "../boldLightTitle/boldLightTitle.jsx";
 import HomeSingleProductCategory from "../homeSingleProductCategory/homeSingleProductCategory";
 import CustomTransparentButton from "../customTransparentButton/customTransparentButton";
 
@@ -36,9 +36,11 @@ function HomeProductCategories() {
 
   return (
     <div id="product-categories-section-wrapper">
-      <LineOnSidesTitle
-        text={"our products"}
-        idName="product-categories-section-title"
+      <BoldLightTitle
+        first={"our"}
+        middle={"products"}
+        bold={2}
+        idName={"product-categories-section-title"}
       />
       <div id="product-categories-wrapper">
         {productCategories.map((category) => (

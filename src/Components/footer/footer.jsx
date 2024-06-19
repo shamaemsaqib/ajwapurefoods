@@ -2,7 +2,7 @@ import React from "react";
 
 import "./footer.css";
 
-import Logo from "../../assets/logos/Logo 1024x822 removebg.png";
+import Logo from "../../assets/logos/Ajwa Logo Green removebg.png";
 
 function Footer() {
   return (

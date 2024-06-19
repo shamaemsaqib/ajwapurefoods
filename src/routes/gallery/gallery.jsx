@@ -113,7 +113,7 @@ function Gallery() {
         </div>
       </div>
       <div id="gallery-achievement-subsection">
-        <BoldLightTitle first={"best achievement"} middle={"award"} bold={1} />
+        <BoldLightTitle first={"best"} middle={"achievement"} bold={2} />
         <div id="gallery-achievement-images-wrapper">
           <img
             src={ReceivingAwardImg}

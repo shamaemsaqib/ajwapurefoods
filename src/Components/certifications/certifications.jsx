@@ -11,7 +11,7 @@ import HACPCert from "../../assets/certificates/Ajwa Pure Foods (HACCP)-PS.png";
 import HalalCert from "../../assets/certificates/Ajwa Pure Foods (Halal)_page-0001.jpg";
 import KosherCert from "../../assets/certificates/Ajwa Pure Foods (Kosher)_page-0001.jpg";
 
-import LineOnSidesTitle from "../lineOnSidesTitle/lineOnSidesTitle";
+import BoldLightTitle from "../boldLightTitle/boldLightTitle.jsx";
 import CustomArrow from "../customArrow/customArrow";
 import SingleCertificate from "../singleCertificate/singleCertificate";
 
@@ -87,9 +87,11 @@ function Certifications() {
   return (
     <div id="certifications-section-wrapper">
       <div id="certifications-section-title-wrapper">
-        <LineOnSidesTitle
-          text={"certifications"}
-          idName="certifications-section-title"
+        <BoldLightTitle
+          first={"our"}
+          middle={"certifications"}
+          bold={2}
+          idName={"certifications-section-title"}
         />
       </div>
       <div id="slider-wrapper">

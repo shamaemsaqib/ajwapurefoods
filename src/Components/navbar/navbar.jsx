@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import "./navbar.css";
 
-import Logo from "../../assets/logos/Logo 1024x822 removebg.png";
+import Logo from "../../assets/logos/Ajwa Logo Light removebg.png";
 
 import { ReactComponent as NavBarsIcon } from "../../assets/icons/bars-solid.svg";
 import { ReactComponent as NavXMarkIcon } from "../../assets/icons/xmark-solid.svg";

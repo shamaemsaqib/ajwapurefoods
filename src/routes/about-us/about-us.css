@@ -11,10 +11,10 @@
 }
 
 #about-story-subsection-text {
-  width: 70%;
+  width: 85%;
   letter-spacing: 1px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 #about-story-subsection-text .bold {
@@ -30,12 +30,13 @@
 }
 
 #about-values-subsection-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #about-values-subsection-cards-wrapper {
   display: flex;
-  max-width: 60%;
+  flex-direction: column;
+  max-width: 75%;
   gap: 2rem;
 }
 
@@ -45,7 +46,7 @@
   gap: 1rem;
   border: 2px solid var(--tertiaryGrey);
   border-radius: 8px;
-  padding: 2rem 1rem;
+  padding: 1.2rem 0.5rem;
   text-align: center;
 }
 
@@ -54,18 +55,145 @@
 }
 
 .about-values-subsection-card-img {
-  max-width: 30%;
+  max-width: 25%;
   height: auto;
 }
 
 .about-values-subsection-card-title {
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 750;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .about-values-subsection-card-text {
   color: #000000a4;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
+}
+
+@media only screen and (min-width: 400px) {
+  #about-values-subsection-title {
+    margin-bottom: 1.2rem;
+  }
+
+  #about-values-subsection-cards-wrapper {
+    max-width: 70%;
+  }
+
+  .about-values-subsection-card {
+    gap: 1.1rem;
+    padding: 1.3rem 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #about-story-subsection-text {
+    width: 82%;
+    line-height: 1.3rem;
+  }
+
+  #about-values-subsection-title {
+    margin-bottom: 1.3rem;
+  }
+
+  .about-values-subsection-card {
+    padding: 1.4rem 1rem;
+  }
+
+  .about-values-subsection-card-text {
+    letter-spacing: 1px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #about-story-subsection-text {
+    width: 80%;
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+  }
+
+  #about-values-subsection-title {
+    margin-bottom: 1.3rem;
+  }
+
+  #about-values-subsection-cards-wrapper {
+    flex-direction: row;
+    max-width: 85%;
+  }
+
+  .about-values-subsection-card {
+    gap: 1.2rem;
+    padding: 1.3rem 0.8rem;
+  }
+
+  .about-values-subsection-card-img {
+    max-width: 30%;
+  }
+
+  .about-values-subsection-card-title {
+    letter-spacing: 3px;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #about-story-subsection-text {
+    width: 78%;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  #about-values-subsection-title {
+    margin-bottom: 1.5rem;
+  }
+
+  #about-values-subsection-cards-wrapper {
+    max-width: 80%;
+  }
+
+  .about-values-subsection-card {
+    gap: 1.2rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #about-story-subsection-text {
+    width: 75%;
+    font-size: 1rem;
+  }
+
+  .about-values-subsection-card {
+    gap: 1.4rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #about-values-subsection-cards-wrapper {
+    max-width: 70%;
+  }
+
+  .about-values-subsection-card {
+    gap: 1.4rem;
+    padding: 1.8rem 1.2rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #about-story-subsection-text {
+    width: 70%;
+    line-height: 1.5rem;
+  }
+
+  #about-values-subsection-cards-wrapper {
+    max-width: 60%;
+  }
+
+  .about-values-subsection-card {
+    padding: 2rem 1rem;
+  }
 }

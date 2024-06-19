@@ -89,6 +89,7 @@
 .products-display-subsection-filter-single-section-list #active {
   text-decoration: underline;
   text-underline-offset: 6px;
+  color: var(--primaryGreenDark);
 }
 
 .products-display-subsection-filter-single-section-list li:hover {
@@ -110,6 +111,7 @@
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
+  color: #57617a;
 }
 
 #products-display-subsection-product-cards-wrapper {
