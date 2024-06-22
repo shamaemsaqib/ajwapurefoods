@@ -98,12 +98,14 @@ function Gallery() {
           first={"international"}
           middle={"participation"}
           bold={1}
+          idName={"gallery-international-subsection-title"}
         />
         <div id="gallery-international-slider-wrapper">
           <Slider {...settings}>
-            {buffer.map(() => {
+            {buffer.map((b, index) => {
               return (
                 <img
+                  key={index}
                   src={require(`../../assets/international/${i++}.jpg`)}
                   alt=""
                 />

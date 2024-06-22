@@ -1,5 +1,5 @@
 #nav-wrapper {
-  width: 100vw;
+  width: 100%;
   color: #fff;
   padding: 15px 35px;
   display: flex;
@@ -8,6 +8,7 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
+  left: 0;
   overflow: hidden;
   background-color: transparent;
   transition: none;
