@@ -3,22 +3,16 @@
   font-family: "Source Sans 3", sans-serif;
   text-transform: uppercase;
   color: var(--primaryGreenDark);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .bold-light-section-title .bold {
   font-weight: 800;
 }
 
-@media only screen and (min-width: 321px) {
-  .bold-light-section-title {
-    font-size: 1.6rem;
-  }
-}
-
 @media only screen and (min-width: 370px) {
   .bold-light-section-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
