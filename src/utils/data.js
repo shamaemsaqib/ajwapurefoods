@@ -6,7 +6,7 @@ export const riceProducts = [
   },
   {
     name: "IRRI-6 White Rice",
-    image: require("../assets/products/rice/IRRI-6-Brown-Rice-300x300.jpg"),
+    image: require("../assets/products/rice/Long-Grain-IRRI-6-Rice-5-Broken-300x300.jpg"),
     category: "rice",
   },
   {

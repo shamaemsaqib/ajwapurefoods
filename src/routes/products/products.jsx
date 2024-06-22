@@ -7,7 +7,7 @@ import allProductsArr, {
   spiceProducts,
 } from "../../utils/data.js";
 
-import FilterIcn from "../../assets/icons/filter-solid.svg";
+import LayerIcn from "../../assets/icons/layer-group-solid.svg";
 
 import BoldLightTitle from "../../Components/boldLightTitle/boldLightTitle.jsx";
 import SingleProductCard from "../../Components/singleProductCard/singleProductCard.jsx";
@@ -39,11 +39,16 @@ function Products() {
       default:
         break;
     }
+    const screenSize = window.innerWidth;
     window.scrollTo({
       top:
         document.getElementById("products-display-subsection-wrapper")
           .offsetTop -
-        window.innerHeight * 0.14,
+        (screenSize < 768
+          ? window.innerHeight * 0.1
+          : screenSize < 1200
+          ? window.innerHeight * 0.12
+          : window.innerHeight * 0.14),
     });
   };
 
@@ -63,7 +68,7 @@ function Products() {
       <div id="products-section">
         <BoldLightTitle
           first={"discover our"}
-          middle={"diverse collection"}
+          middle={"products"}
           bold={2}
           idName={"products-section-title"}
         />
@@ -74,63 +79,48 @@ function Products() {
           onChange={searchChangeHandler}
         />
         <div id="products-display-subsection-wrapper">
-          <div id="products-display-subsection-filter-wrapper">
-            <div id="products-display-subsection-filter">
-              <h4 id="products-display-subsection-filter-title">
-                <img src={FilterIcn} alt="" /> filter
-              </h4>
-              <div className="products-display-subsection-filter-single-section">
-                <h4 className="products-display-subsection-filter-single-section-title">
-                  category
-                </h4>
-                <ul className="products-display-subsection-filter-single-section-list">
-                  <li
-                    onClick={filterCategoryClickHandler}
-                    id={`${currCategory === 0 ? `active` : ``}`}
-                  >
-                    all
-                  </li>
-                  <li
-                    onClick={filterCategoryClickHandler}
-                    id={`${currCategory === 1 ? `active` : ``}`}
-                  >
-                    rice
-                  </li>
-                  <li
-                    onClick={filterCategoryClickHandler}
-                    id={`${currCategory === 2 ? `active` : ``}`}
-                  >
-                    pink salt
-                  </li>
-                  <li
-                    onClick={filterCategoryClickHandler}
-                    id={`${currCategory === 3 ? `active` : ``}`}
-                  >
-                    spices
-                  </li>
-                </ul>
-              </div>
+          <div id="products-display-subsection-filter">
+            <h4 id="products-display-subsection-filter-title">
+              <img src={LayerIcn} alt="" /> category
+            </h4>
+            <ul id="products-display-subsection-filter-list">
+              <li
+                onClick={filterCategoryClickHandler}
+                id={`${currCategory === 0 ? `active` : ``}`}
+              >
+                all
+              </li>
+              <li
+                onClick={filterCategoryClickHandler}
+                id={`${currCategory === 1 ? `active` : ``}`}
+              >
+                rice
+              </li>
+              <li
+                onClick={filterCategoryClickHandler}
+                id={`${currCategory === 2 ? `active` : ``}`}
+              >
+                pink salt
+              </li>
+              <li
+                onClick={filterCategoryClickHandler}
+                id={`${currCategory === 3 ? `active` : ``}`}
+              >
+                spices
+              </li>
+            </ul>
+          </div>
+          {currProducts.length > 0 ? (
+            <div id="products-display-subsection-product-cards-wrapper">
+              {currProducts.map((product, index) => (
+                <SingleProductCard key={index} product={product} />
+              ))}
             </div>
-          </div>
-          <div id="products-display-subsection-products-wrapper">
-            {currProducts.length > 0 ? (
-              <div>
-                <h4 id="products-display-subsection-products-count">
-                  <hr />
-                  {currProducts.length} products found <hr />
-                </h4>
-                <div id="products-display-subsection-product-cards-wrapper">
-                  {currProducts.map((product) => (
-                    <SingleProductCard product={product} />
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <h4 id="products-display-subsection-no-products">
-                No products matched your search!
-              </h4>
-            )}
-          </div>
+          ) : (
+            <h4 id="products-display-subsection-no-products">
+              No products matched your search!
+            </h4>
+          )}
         </div>
       </div>
     </section>
